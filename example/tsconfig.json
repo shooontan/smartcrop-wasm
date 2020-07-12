@@ -1,0 +1,7 @@
+{
+  "extends": "@shooontan/tsconfig",
+  "compilerOptions": {
+    "jsx": "react",
+    "jsxFactory": "h"
+  }
+}

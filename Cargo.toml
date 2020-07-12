@@ -1,0 +1,15 @@
+[package]
+name = "smartcrop-wasm"
+version = "0.0.1"
+description = "WebAssembly implementation of smartcrop.js"
+repository = "https://github.com/shooontan/smartcrop-wasm.git"
+authors = ["shooontan <logo.bee.doo19@gmail.com>"]
+keywords = ["smartcrop", "wasm"]
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+image = { version = "0.23.6", default-features = false, features = ["gif", "jpeg", "ico", "png", "pnm", "tga", "tiff", "webp", "bmp", "hdr", "dxt", "dds", "farbfeld"] }
+wasm-bindgen = { version = "0.2.65" }
